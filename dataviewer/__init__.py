@@ -21,13 +21,15 @@
 
 import nds2
 
-from . import version
+from gwpy.plotter import rcParams
 
+from ._version import get_versions
+
+__version__ = get_versions()['version']
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
 __credits__ = 'The LIGO Laboratory, and the LIGO Scientific Collaboration'
-__version__ = version.version
 
-from gwpy.plotter import rcParams
+del get_versions
 
 # set default params
 rcParams.update({

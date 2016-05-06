@@ -30,14 +30,12 @@ from gwpy.timeseries import TimeSeriesDict
 from gwpy.spectrogram import (Spectrogram, SpectrogramList)
 from gwpy.plotter import (SpectrogramPlot, TimeSeriesAxes)
 
-from . import version
 from .buffer import (OrderedDict, DataBuffer, DataIterator)
 from .core import PARAMS
 from .registry import register_monitor
 from .timeseries import TimeSeriesMonitor
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
-__version__ = version.version
 
 __all__ = ['SpectrogramMonitor']
 

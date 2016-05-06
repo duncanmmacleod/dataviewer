@@ -34,11 +34,9 @@ from matplotlib.widgets import Button
 
 from gwpy.time import tconvert
 
-from . import version
 from .log import Logger
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
-__version__ = version.version
 
 # set button positions
 BTN_BOTTOM = 0.01

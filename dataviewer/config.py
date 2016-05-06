@@ -76,11 +76,9 @@ except ImportError:
 from gwpy.detector import ChannelList
 from gwpy.spectrum import Spectrum
 
-from . import version
 from .registry import get_monitor
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
-__version__ = version.version
 
 re_quote = re.compile(r'^[\s\"\']+|[\s\"\']+$')
 

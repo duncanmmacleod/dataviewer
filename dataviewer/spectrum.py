@@ -31,14 +31,12 @@ from astropy.time import Time
 from gwpy.plotter import (SpectrumPlot, SpectrumAxes, rcParams)
 from gwpy.spectrum.core import Spectrum
 
-from . import version
 from .buffer import OrderedDict
 from .core import PARAMS
 from .registry import register_monitor
 from .timeseries import TimeSeriesMonitor
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
-__version__ = version.version
 
 __all__ = ['SpectrumMonitor']
 

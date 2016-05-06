@@ -23,9 +23,6 @@ import logging
 
 from gwpy.time import tconvert
 
-from . import version
-
-__version__ = version.version
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
 
 

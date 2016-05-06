@@ -25,7 +25,6 @@ from gwpy.detector import Channel
 from gwpy.io import nds as ndsio
 from gwpy.timeseries import (TimeSeries, TimeSeriesDict)
 
-from .. import version
 from ..log import Logger
 from . import (register_data_source, register_data_iterator)
 

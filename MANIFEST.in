@@ -1,0 +1,4 @@
+include MANIFEST.in README.md LICENSE
+include requirements.txt
+include versioneer.py
+include dataviewer/_version.py

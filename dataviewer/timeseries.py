@@ -26,13 +26,11 @@ from numpy import nan
 from gwpy.timeseries import (TimeSeries, TimeSeriesDict)
 from gwpy.plotter import (TimeSeriesPlot, TimeSeriesAxes)
 
-from . import version
 from .buffer import DataBuffer
 from .registry import register_monitor
 from .data import DataMonitor
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
-__version__ = version.version
 
 __all__ = ['TimeSeriesMonitor']
 

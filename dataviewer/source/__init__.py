@@ -23,11 +23,9 @@ from __future__ import print_function
 
 import abc
 
-from .. import version
 from ..log import Logger
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
-__version__ = version.version
 
 SOURCES = {}
 ITERATORS = {}

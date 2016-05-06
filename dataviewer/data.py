@@ -33,13 +33,11 @@ import nds2
 from gwpy.detector import (Channel, ChannelList)
 from gwpy.time import tconvert
 
-from . import version
 from .core import Monitor
 from .log import Logger
 from .buffer import DataIterator
 
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
-__version__ = version.version
 
 NDS2_FRAME_TYPE = defaultdict(lambda: 'C', [
     (nds2.channel.CHANNEL_TYPE_RAW, 'C'),

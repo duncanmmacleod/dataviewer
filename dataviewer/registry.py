@@ -22,9 +22,7 @@
 
 import re
 
-from . import version
 __author__ = 'Duncan Macleod <duncan.macleod@ligo.org>'
-__version__ = version.version
 
 _MONITORS = {}
 
