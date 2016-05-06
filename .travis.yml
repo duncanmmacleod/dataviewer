@@ -1,0 +1,32 @@
+language: python
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - gcc
+      - gfortran
+      - libblas-dev
+      - liblapack-dev
+      - python-m2crypto
+      - swig
+
+before_install:
+  - . .travis/build-nds2.sh
+  - pip install -q --upgrade pip
+
+install:
+  - pip install -r requirements.txt
+  - python setup.py build
+
+script:
+  - coverage run --source=dataviewer --omit="dataviewer/tests/*,dataviewer/*version*" -m py.test -v dataviewer/
+  - pip install .
+
+after_success:
+  - coveralls
+
+cache:
+  apt: true
+  pip: true
